@@ -31,27 +31,27 @@ $(document).ready(function() {
         },
         messages: {
             firstName: {
-                required: " First name is required."
+                required: " Enter your first name."
             },
             lastName: {
-                required: " Last name is required."
+                required: " Enter your last name."
             },
             phone: {
-                required: " Phone number is required.",
-                phoneUS: " Phone number is invalid."
+                required: " Enter your phone number.",
+                phoneUS: " Phone numbers must be in this format: (999) 999-9999."
             },
             email: {
-                required: " Email is required.",
-                email: " Email is invalid."
+                required: " Enter your email address.",
+                email: " Email addresses must be in this format: a@b.com."
             },
             specialty: {
-                required: " Specialty is required."
+                required: " Enter the specialty you are seeking."
             },
             date: {
-                required: " Date is required."
+                required: " Enter the date of your appointment."
             },
             time: {
-                required: " Time is required."
+                required: " Enter the time of your appointment."
             }
         },
         focusCleanup: true
