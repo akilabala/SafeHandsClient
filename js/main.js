@@ -37,5 +37,19 @@ $(document).ready(function() {
             $('#errorLogin').html("Enter your password.");
             return false;
         }
+
+        $.post(
+            "http://localhost:9090/api/authenticate",
+            {
+                username: username,
+                password: password
+            },
+            function(data) {
+                var token = data.token;
+                if (token) {
+                    window.localStorage.setItem("token", token);
+                }
+            }
+        );
     });
 });
