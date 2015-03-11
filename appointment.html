@@ -32,6 +32,9 @@
     <div class="login">
         <h2 class="content-head is-center">APPOINTMENTS</h2>
     </div>
+    <div id="appointments">
+
+    </div>
 
 
 </div>
@@ -40,11 +43,19 @@
 <script src="bower_components/jquery.validation/dist/additional-methods.min.js"></script>
 <script src="bower_components/underscore/underscore-min.js"></script>
 <script src="bower_components/backbone/backbone.js"></script>
+<script src="js/backboneIntercept.js"></script>
 <script src="js/models/appointment.js"></script>
 <script src="js/collections/appointmentList.js"></script>
 <script src="js/views/appointment.js"></script>
 <script src="js/views/appointmentList.js"></script>
+<script src="js/routers/router.js"></script>
 <script src="js/main.js"></script>
 <script src="js/validation.js"></script>
+<script>
+    $(function(){
+        app.router.start();
+        app.router.navigate("", {trigger: true});
+    });
+</script>
 </body>
 </html>
